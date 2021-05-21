@@ -1,0 +1,149 @@
+*,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main{
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        padding: 30px;
+        #col-left{
+            padding: 20px 0 0;
+            max-height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 340px;
+            background: #F1F1F1;
+            form{
+                display: flex;
+                padding: 5px 0;
+                flex-direction: column;
+                input,select,textarea{
+                    height: 38px;
+                    margin-top: 16px;
+                    width: 240px;
+                    border: 1px solid #C9C9C9;
+                    border-radius: 0;
+                    outline: none;
+                    padding: 10px 20px;
+                   &::placeholder{
+                       color: black;
+                       font-size: 16px;
+                    }
+                }
+                textarea{
+                    font-size: 16px;
+                    font-weight: 500;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    left: 0;
+                }
+                button{
+                    width: 240px;
+                    height: 43px;
+                    background: #205CF5;
+                    border: 1px solid #33A8FD;
+                    border-radius: 4px;
+                    font-size: 17px;
+                    color: #E2E2E2;
+                    margin-top: 22px;
+                    cursor:grab;
+                    &:hover{
+                        background: green;
+                    }
+                }
+            }
+        }
+        // Second column
+        #col-right{
+            background: #F1F1F1;
+            position: relative;
+            margin-left: 20px;
+            width: 720px;
+            max-height: 600px;
+            #addButton{
+                position: absolute;
+                right: 14px;
+                top: 26px;
+                width: 169px;
+                height: 41px;
+                background: #01CC5E;
+                border-radius: 5px;
+                color: #FAF9F9;
+                font-family: Roboto;
+                font-style: normal;
+                cursor:grab;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                border: transparent;
+            }
+            #items{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 20px;
+                margin-top: 85px;
+                .item{
+                    height: 90px;
+                    width: 650px;
+                    margin-top: 15px;
+                    background: #fbfbfbaf;
+                    border-radius: 8px;
+                    display: flex;
+                    flex-direction: row;
+                    .date{
+                        height: 100%;
+                        width: 90px;
+                        display: flex;
+                        flex-direction: column;
+                        background: white;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 8px;
+                    }
+                    .day-container{
+                        display: flex;
+                        align-items: center;
+                        
+                        h1{
+                            color: #FC440A;;
+                            font-size: 30px;
+                        }
+                        h4{
+                            margin-top: 11px;
+                            margin-left: 3px;
+                        }
+                    }
+                   
+                }
+                .info{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: calc(100% - 100px);
+                    button{
+                        width: 107px;
+                        height: 38px;
+                        background: rgba(186, 226, 255, 0.24);
+                        border-radius: 27px;
+                        font-size: 15px;
+                        color: #0092FC;
+                        border: transparent;
+                        cursor: pointer;
+                    }
+                  .ico{
+                      font-size: 30px;
+                  }  
+                } 
+            }
+        }
+    }
+}

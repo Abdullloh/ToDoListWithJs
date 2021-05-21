@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+      <main>
+          <section>
+              <!-- first column -->
+              <div id="col-left">
+                  <p style="    font-size: 18px; font-weight: 600;">New Todo item</p>
+                  <form action="#">
+                      <input class="input"  type="text" id="toDoName" placeholder="Todo Name ">
+                      <input class="input"  type="text" id="icons" placeholder="Category with icon ">
+                      <input class="input"  type="text" name="priority" placeholder="Priority">
+                      <textarea  id='textarea' style="height: 130px;" rows="4" cols="50" name="comment" form="usrform">
+                        Description</textarea>
+                    <input class="input"  type="date" name="date" id="time">
+                    <input class="input"  type="text" name="text" id="select">
+                   
+                    <button id="create">Create</button>
+                  </form>
+              </div>
+
+              <!-- Second column -->
+              <div id="col-right">
+                  <button id="addButton">ADD Todo</button>
+                  <div id="items">
+                      <div class="item"> 
+                          <div class="date">
+                              <div class="day-container"><h1>20</h1><h4>May</h3></div>
+                              <div class="time" style="margin-right: 30px;">80:00</div>
+                          </div>
+                          <div class="info">
+                               <span>
+                                <h4>Gardening</h4>
+                                <p>Will do gradeniong with my friends...</p>
+                               </span>
+                               <span class="ico">🏃</span>
+                               <button>Started</button>
+                          </div>
+                      </div>
+                      <!-- <div class="item"> </div> -->
+                  </div>
+              </div>
+          </section>
+      </main>
+    
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
